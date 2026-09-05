@@ -7,15 +7,18 @@ let sessionAttempts = 0;
 let sessionCorrect = 0;
 let hintUsed = false;
 
-const storageKey = 'fleetbound-progress-v1';
+const cookieKey = 'fleetbound-progress-v1';
 
 function loadProgress() {
-  try { return JSON.parse(localStorage.getItem(storageKey)) || {}; }
+  const row = document.cookie.split('; ').find(x => x.startsWith(cookieKey + '='));
+  if (!row) return {};
+  try { return JSON.parse(decodeURIComponent(row.split('=').slice(1).join('='))) || {}; }
   catch { return {}; }
 }
 
 function saveProgress(progress) {
-  localStorage.setItem(storageKey, JSON.stringify(progress));
+  const value = encodeURIComponent(JSON.stringify(progress));
+  document.cookie = `${cookieKey}=${value}; max-age=31536000; path=/; SameSite=Lax`;
 }
 
 function recordAttempt(ship, correct) {
@@ -111,7 +114,7 @@ function finishGame() {
   $('game-screen').classList.add('hidden');
   $('end-screen').classList.remove('hidden');
   const accuracy = sessionAttempts ? Math.round(sessionCorrect / sessionAttempts * 100) : 0;
-  $('final-score').textContent = `Correct: ${sessionCorrect}/${sessionAttempts} (${accuracy}%). Progress is saved in this browser.`;
+  $('final-score').textContent = `Correct: ${sessionCorrect}/${sessionAttempts} (${accuracy}%). Ship progress is saved in a browser cookie.`;
 }
 
 $('start-button').addEventListener('click', startGame);
