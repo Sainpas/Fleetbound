@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fleetbound ⚓</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Fleetbound ⚓</h1>
+      <p>Learn the silhouettes. Know the fleet.</p>
+    </header>
+
+    <section id="start-screen" class="panel">
+      <h2>Warship Recognition</h2>
+      <p>Identify the ship from its silhouette. Hints are available if you need them.</p>
+      <button id="start-button" class="primary">Start Game</button>
+    </section>
+
+    <section id="game-screen" class="panel hidden">
+      <div class="stats">
+        <span>Ship <strong id="ship-number">1</strong>/<strong id="ship-total">10</strong></span>
+        <span>Attempts <strong id="attempts">0</strong></span>
+        <span>Correct <strong id="correct">0</strong></span>
+      </div>
+
+      <div class="silhouette" id="silhouette">
+        <span>Silhouette placeholder</span>
+        <small>Add the ship image later.</small>
+      </div>
+
+      <div class="hint-box" id="hint-box"></div>
+      <div class="answers" id="answers"></div>
+      <button id="hint-button" class="secondary">Show Hint</button>
+      <button id="next-button" class="primary hidden">Next Ship</button>
+      <p id="result" class="result"></p>
+    </section>
+
+    <section id="end-screen" class="panel hidden">
+      <h2>Fleet complete!</h2>
+      <p id="final-score"></p>
+      <button id="restart-button" class="primary">Play Again</button>
+    </section>
+  </main>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
