@@ -24,6 +24,7 @@ button:disabled { opacity: .45; cursor: default; }
 .stats { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: #aebbc5; margin-bottom: 20px; }
 .stats strong { color: #fff; }
 .silhouette { min-height: 260px; border-radius: 14px; background: #05080b; border: 1px dashed #53626d; display: grid; place-content: center; text-align: center; color: #687780; margin-bottom: 18px; }
+.silhouette img { display: block; width: min(100%, 760px); max-height: 420px; object-fit: contain; }
 .silhouette small { display: block; margin-top: 6px; }
 .hint-box { min-height: 28px; color: #d7c58b; margin: 12px 0; }
 .answers { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 10px; margin: 16px 0; }

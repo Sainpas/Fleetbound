@@ -66,7 +66,15 @@ function showShip() {
   $('hint-button').disabled = false;
   $('hint-button').classList.remove('hidden');
   $('next-button').classList.add('hidden');
-  $('silhouette').innerHTML = '<span>Silhouette placeholder</span><small>Add the ship image later.</small>';
+  const silhouette = $('silhouette');
+  silhouette.innerHTML = '';
+  const image = document.createElement('img');
+  image.src = ship.silhouette;
+  image.alt = 'Warship silhouette';
+  image.addEventListener('error', () => {
+    silhouette.innerHTML = '<span>Silhouette unavailable</span><small>Check the ship image file.</small>';
+  });
+  silhouette.appendChild(image);
   const answers = shuffle(ships).map(s => s.id === ship.id ? ship : s).slice(0, 4);
   if (!answers.some(s => s.id === ship.id)) answers[0] = ship;
   $('answers').innerHTML = '';
