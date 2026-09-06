@@ -1,0 +1,6 @@
+{
+  "class": "Admiral",
+  "nation": "HMS",
+  "type": "Battlecruiser",
+  "ships": ["HMS Hood"]
+}

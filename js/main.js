@@ -21,6 +21,11 @@ function saveProgress(progress) {
   document.cookie = `${cookieKey}=${value}; max-age=31536000; path=/; SameSite=Lax`;
 }
 
+function resetProgress() {
+  document.cookie = `${cookieKey}=; max-age=0; path=/; SameSite=Lax`;
+  $('reset-message').textContent = 'Your saved Fleetbound results have been reset.';
+}
+
 function recordAttempt(ship, correct) {
   const progress = loadProgress();
   const p = progress[ship.id] || { attempts: 0, correct: 0 };
@@ -121,3 +126,6 @@ $('start-button').addEventListener('click', startGame);
 $('hint-button').addEventListener('click', showHint);
 $('next-button').addEventListener('click', nextShip);
 $('restart-button').addEventListener('click', startGame);
+$('reset-progress-button').addEventListener('click', () => {
+  if (window.confirm('Reset all saved Fleetbound results on this browser?')) resetProgress();
+});

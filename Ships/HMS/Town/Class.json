@@ -1,0 +1,6 @@
+{
+  "class": "Town",
+  "nation": "HMS",
+  "type": "Light Cruiser",
+  "ships": ["HMS Belfast"]
+}

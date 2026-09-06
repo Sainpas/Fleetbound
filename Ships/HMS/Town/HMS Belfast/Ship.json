@@ -1,0 +1,7 @@
+{
+  "id": "hms-belfast",
+  "name": "HMS Belfast",
+  "class": "Town",
+  "nation": "HMS",
+  "type": "Light Cruiser"
+}

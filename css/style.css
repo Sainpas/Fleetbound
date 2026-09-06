@@ -17,6 +17,9 @@ header p { margin: 8px 0 0; color: #9eacb8; }
 button { border: 0; border-radius: 10px; padding: 12px 18px; margin: 6px; font-size: 1rem; cursor: pointer; }
 .primary { background: #d8e4ec; color: #101820; font-weight: 700; }
 .secondary { background: #263845; color: #e8edf2; }
+.danger { background: transparent; color: #f2b6b9; border: 1px solid #9b5961; }
+.danger:hover:not(:disabled) { background: #542c32; }
+.reset-message { min-height: 1.5rem; color: #aebbc5; }
 button:disabled { opacity: .45; cursor: default; }
 .stats { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; color: #aebbc5; margin-bottom: 20px; }
 .stats strong { color: #fff; }

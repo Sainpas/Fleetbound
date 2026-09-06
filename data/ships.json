@@ -1,7 +1,7 @@
 {
   "ships": [
     {"id":"hms-nelson","name":"HMS Nelson","nation":"HMS","class":"Nelson","type":"Battleship","silhouette":null},
-    {"id":"hms-hood","name":"HMS Hood","nation":"HMS","class":"Admiral-class","type":"Battlecruiser","silhouette":null},
+    {"id":"hms-hood","name":"HMS Hood","nation":"HMS","class":"Admiral","type":"Battlecruiser","silhouette":null},
     {"id":"hms-king-george-v","name":"HMS King George V","nation":"HMS","class":"King George V","type":"Battleship","silhouette":null},
     {"id":"hms-prince-of-wales","name":"HMS Prince of Wales","nation":"HMS","class":"King George V","type":"Battleship","silhouette":null},
     {"id":"hms-belfast","name":"HMS Belfast","nation":"HMS","class":"Town","type":"Light Cruiser","silhouette":null},

@@ -1,0 +1,7 @@
+{
+  "id": "hms-nelson",
+  "name": "HMS Nelson",
+  "class": "Nelson",
+  "nation": "HMS",
+  "type": "Battleship"
+}

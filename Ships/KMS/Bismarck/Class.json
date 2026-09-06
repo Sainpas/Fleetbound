@@ -1,0 +1,6 @@
+{
+  "class": "Bismarck",
+  "nation": "KMS",
+  "type": "Battleship",
+  "ships": ["Bismarck", "Tirpitz"]
+}
