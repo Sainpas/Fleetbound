@@ -5,7 +5,7 @@ let order = [];
 let current = 0;
 let sessionAttempts = 0;
 let sessionCorrect = 0;
-let hintUsed = false;
+let hintIndex = 0;
 
 const cookieKey = 'fleetbound-progress-v1';
 
@@ -60,10 +60,11 @@ function startGame() {
 function showShip() {
   if (current >= order.length) return finishGame();
   const ship = order[current];
-  hintUsed = false;
+  hintIndex = 0;
   $('hint-box').textContent = '';
   $('result').textContent = '';
   $('hint-button').disabled = false;
+  $('hint-button').textContent = 'Show Hint';
   $('hint-button').classList.remove('hidden');
   $('next-button').classList.add('hidden');
   const silhouette = $('silhouette');
@@ -111,11 +112,12 @@ function chooseAnswer(id, ship, clicked) {
 }
 
 function showHint() {
-  if (hintUsed) return;
   const ship = order[current];
-  hintUsed = true;
-  $('hint-box').textContent = `Hint: ${ship.hints[0]}`;
-  $('hint-button').disabled = true;
+  if (hintIndex >= ship.hints.length) return;
+  hintIndex++;
+  $('hint-box').textContent = `Hint ${hintIndex}/${ship.hints.length}: ${ship.hints[hintIndex - 1]}`;
+  $('hint-button').textContent = hintIndex < ship.hints.length ? 'Show Next Hint' : 'No More Hints';
+  $('hint-button').disabled = hintIndex >= ship.hints.length;
 }
 
 function nextShip() {
