@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-label="Gneisenau silhouette">
+  <title>Gneisenau silhouette</title>
+  <rect width="1200" height="260" fill="#05080b"/>
+  <g fill="#000000" stroke="#000000" stroke-linejoin="round">
+    <!-- hull above the waterline -->
+    <path d="M55 178 L105 160 L1040 160 L1118 145 L1160 154 L1132 181 L1010 197 L165 197 L80 190 Z"/>
+    <!-- forward main turret -->
+    <path d="M185 159 L185 143 L205 132 L255 132 L275 143 L275 159 Z"/>
+    <path d="M205 133 L175 112 L184 106 L218 132 Z M242 132 L278 108 L287 114 L258 143 Z"/>
+    <!-- aft main turrets -->
+    <path d="M820 160 L820 143 L840 132 L890 132 L910 143 L910 160 Z"/>
+    <path d="M840 133 L810 112 L819 106 L853 132 Z M877 132 L913 108 L922 114 L893 143 Z"/>
+    <path d="M965 160 L965 145 L983 136 L1028 136 L1045 145 L1045 160 Z"/>
+    <path d="M984 137 L956 119 L964 113 L995 136 Z M1018 136 L1050 115 L1058 121 L1034 145 Z"/>
+    <!-- bridge and superstructure -->
+    <path d="M420 160 L420 105 L445 105 L445 88 L485 88 L485 70 L525 70 L525 160 Z"/>
+    <path d="M438 105 L438 57 L449 57 L449 38 L458 38 L458 57 L468 57 L468 105 Z"/>
+    <path d="M505 70 L505 28 L515 28 L515 8 L523 8 L523 28 L534 28 L534 70 Z"/>
+    <!-- funnel -->
+    <path d="M600 160 L600 84 L620 84 L628 55 L660 55 L668 84 L668 160 Z"/>
+    <path d="M624 55 L616 43 L652 43 L644 55 Z"/>
+    <!-- mast -->
+    <path d="M735 160 L742 48 L750 48 L757 160 Z"/>
+    <path d="M746 55 L708 80 L710 86 L748 66 Z M750 70 L790 92 L793 86 L752 60 Z"/>
+    <!-- small deck fittings -->
+    <path d="M330 160 L338 143 L365 143 L373 160 Z M700 160 L708 145 L728 145 L735 160 Z"/>
+  </g>
+  <line x1="25" y1="202" x2="1175" y2="202" stroke="#53626d" stroke-width="2" stroke-dasharray="8 8"/>
+</svg>
