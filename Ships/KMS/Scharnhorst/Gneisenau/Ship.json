@@ -1,0 +1,10 @@
+{
+  "name": "Gneisenau",
+  "id": "kms-gneisenau",
+  "nation": "KMS",
+  "class": "Scharnhorst",
+  "type": "Battleship",
+  "commissioned": 1938,
+  "fate": "Scuttled as a blockship at Gotenhafen in 1945",
+  "silhouette_source": "Based on public-domain U.S. Navy recognition drawings and historical side-profile references"
+}
