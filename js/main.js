@@ -51,6 +51,7 @@ function startGame() {
   current = 0;
   sessionAttempts = 0;
   sessionCorrect = 0;
+  $('reset-message').textContent = '';
   $('start-screen').classList.add('hidden');
   $('end-screen').classList.add('hidden');
   $('game-screen').classList.remove('hidden');
@@ -69,13 +70,17 @@ function showShip() {
   $('next-button').classList.add('hidden');
   const silhouette = $('silhouette');
   silhouette.innerHTML = '';
-  const image = document.createElement('img');
-  image.src = ship.silhouette;
-  image.alt = 'Warship silhouette';
-  image.addEventListener('error', () => {
-    silhouette.innerHTML = '<span>Silhouette unavailable</span><small>Check the ship image file.</small>';
-  });
-  silhouette.appendChild(image);
+  if (ship.silhouette) {
+    const image = document.createElement('img');
+    image.src = ship.silhouette;
+    image.alt = 'Warship silhouette';
+    image.addEventListener('error', () => {
+      silhouette.innerHTML = '<span>Silhouette unavailable</span><small>Check the ship image file.</small>';
+    });
+    silhouette.appendChild(image);
+  } else {
+    silhouette.innerHTML = '<span>Silhouette placeholder</span><small>Add the ship image later.</small>';
+  }
   const answers = shuffle(ships).map(s => s.id === ship.id ? ship : s).slice(0, 4);
   if (!answers.some(s => s.id === ship.id)) answers[0] = ship;
   $('answers').innerHTML = '';
@@ -138,4 +143,11 @@ $('next-button').addEventListener('click', nextShip);
 $('restart-button').addEventListener('click', startGame);
 $('reset-progress-button').addEventListener('click', () => {
   if (window.confirm('Reset all saved Fleetbound results on this browser?')) resetProgress();
+});
+$('end-reset-progress-button').addEventListener('click', () => {
+  if (window.confirm('Reset all saved Fleetbound results on this browser?')) {
+    resetProgress();
+    $('end-screen').classList.add('hidden');
+    $('start-screen').classList.remove('hidden');
+  }
 });
