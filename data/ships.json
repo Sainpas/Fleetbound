@@ -1,15 +1,172 @@
 {
   "ships": [
-    {"id":"hms-nelson","name":"HMS Nelson","nation":"HMS","class":"Nelson","type":"Battleship","silhouette":null},
-    {"id":"hms-hood","name":"HMS Hood","nation":"HMS","class":"Admiral","type":"Battlecruiser","silhouette":null},
-    {"id":"hms-king-george-v","name":"HMS King George V","nation":"HMS","class":"King George V","type":"Battleship","silhouette":null},
-    {"id":"hms-prince-of-wales","name":"HMS Prince of Wales","nation":"HMS","class":"King George V","type":"Battleship","silhouette":null},
-    {"id":"hms-belfast","name":"HMS Belfast","nation":"HMS","class":"Town","type":"Light Cruiser","silhouette":null},
-    {"id":"kms-bismarck","name":"Bismarck","nation":"KMS","class":"Bismarck","type":"Battleship","silhouette":null},
-    {"id":"kms-tirpitz","name":"Tirpitz","nation":"KMS","class":"Bismarck","type":"Battleship","silhouette":null},
-    {"id":"kms-scharnhorst","name":"Scharnhorst","nation":"KMS","class":"Scharnhorst","type":"Battleship","silhouette":null},
-    {"id":"kms-gneisenau","name":"Gneisenau","nation":"KMS","class":"Scharnhorst","type":"Battleship","silhouette":"Ships/KMS/Scharnhorst/Gneisenau/Silhouette.svg"},
-    {"id":"kms-prinz-eugen","name":"Prinz Eugen","nation":"KMS","class":"Admiral Hipper","type":"Heavy Cruiser","silhouette":null},
-    {"id":"kms-admiral-hipper","name":"Admiral Hipper","nation":"KMS","class":"Admiral Hipper","type":"Heavy Cruiser","silhouette":null}
+    {
+      "id": "hms-nelson",
+      "name": "HMS Nelson",
+      "nation": "HMS",
+      "class": "Nelson",
+      "type": "Battleship",
+      "silhouette": null
+    },
+    {
+      "id": "hms-hood",
+      "name": "HMS Hood",
+      "nation": "HMS",
+      "class": "Admiral",
+      "type": "Battlecruiser",
+      "silhouette": null
+    },
+    {
+      "id": "hms-king-george-v",
+      "name": "HMS King George V",
+      "nation": "HMS",
+      "class": "King George V",
+      "type": "Battleship",
+      "silhouette": null
+    },
+    {
+      "id": "hms-prince-of-wales",
+      "name": "HMS Prince of Wales",
+      "nation": "HMS",
+      "class": "King George V",
+      "type": "Battleship",
+      "silhouette": null
+    },
+    {
+      "id": "hms-belfast",
+      "name": "HMS Belfast",
+      "nation": "HMS",
+      "class": "Town",
+      "type": "Light Cruiser",
+      "silhouette": null
+    },
+    {
+      "id": "kms-bismarck",
+      "name": "Bismarck",
+      "nation": "KMS",
+      "class": "Bismarck",
+      "type": "Battleship",
+      "silhouette": null
+    },
+    {
+      "id": "kms-tirpitz",
+      "name": "Tirpitz",
+      "nation": "KMS",
+      "class": "Bismarck",
+      "type": "Battleship",
+      "silhouette": null
+    },
+    {
+      "id": "kms-scharnhorst",
+      "name": "Scharnhorst",
+      "nation": "KMS",
+      "class": "Scharnhorst",
+      "type": "Battleship",
+      "silhouette": null
+    },
+    {
+      "id": "kms-gneisenau",
+      "name": "Gneisenau",
+      "nation": "KMS",
+      "class": "Scharnhorst",
+      "type": "Battleship",
+      "silhouette": "Ships/KMS/Scharnhorst/Gneisenau/Silhouette.svg"
+    },
+    {
+      "id": "kms-prinz-eugen",
+      "name": "Prinz Eugen",
+      "nation": "KMS",
+      "class": "Admiral Hipper",
+      "type": "Heavy Cruiser",
+      "silhouette": null
+    },
+    {
+      "id": "kms-admiral-hipper",
+      "name": "Admiral Hipper",
+      "nation": "KMS",
+      "class": "Admiral Hipper",
+      "type": "Heavy Cruiser",
+      "silhouette": null
+    },
+    {
+      "id": "hms-agincourt",
+      "name": "HMS Agincourt",
+      "nation": "HMS",
+      "class": "Agincourt",
+      "type": "Battleship",
+      "silhouette": "Ships/HMS/Agincourt/HMS%20Agincourt/Silhouette.png"
+    },
+    {
+      "id": "hms-ark-royal",
+      "name": "HMS Ark Royal",
+      "nation": "HMS",
+      "class": "Ark Royal",
+      "type": "Aircraft Carrier",
+      "silhouette": "Ships/HMS/Ark%20Royal/HMS%20Ark%20Royal/Silhouette.png"
+    },
+    {
+      "id": "hms-courageous",
+      "name": "HMS Courageous",
+      "nation": "HMS",
+      "class": "Courageous",
+      "type": "Battlecruiser",
+      "silhouette": "Ships/HMS/Courageous/HMS%20Courageous/Silhouette.png"
+    },
+    {
+      "id": "hms-furious",
+      "name": "HMS Furious",
+      "nation": "HMS",
+      "class": "Courageous",
+      "type": "Battlecruiser",
+      "silhouette": "Ships/HMS/Courageous/HMS%20Furious/Silhouette.png"
+    },
+    {
+      "id": "hms-erin",
+      "name": "HMS Erin",
+      "nation": "HMS",
+      "class": "Erin",
+      "type": "Battleship",
+      "silhouette": "Ships/HMS/Erin/HMS%20Erin/Silhouette.png"
+    },
+    {
+      "id": "hms-lion",
+      "name": "HMS Lion",
+      "nation": "HMS",
+      "class": "Lion",
+      "type": "Battlecruiser",
+      "silhouette": "Ships/HMS/Lion/HMS%20Lion/Silhouette.png"
+    },
+    {
+      "id": "hms-revenge",
+      "name": "HMS Revenge",
+      "nation": "HMS",
+      "class": "Revenge",
+      "type": "Battleship",
+      "silhouette": "Ships/HMS/Revenge/HMS%20Revenge/Silhouette.png"
+    },
+    {
+      "id": "hms-tiger",
+      "name": "HMS Tiger",
+      "nation": "HMS",
+      "class": "Tiger",
+      "type": "Battlecruiser",
+      "silhouette": "Ships/HMS/Tiger/HMS%20Tiger/Silhouette.png"
+    },
+    {
+      "id": "hms-vanguard",
+      "name": "HMS Vanguard",
+      "nation": "HMS",
+      "class": "Vanguard",
+      "type": "Battleship",
+      "silhouette": "Ships/HMS/Vanguard/HMS%20Vanguard/Silhouette.png"
+    },
+    {
+      "id": "kms-roon",
+      "name": "Roon",
+      "nation": "KMS",
+      "class": "Roon",
+      "type": "Armoured Cruiser",
+      "silhouette": "Ships/KMS/Roon/Roon/Silhouette.png"
+    }
   ]
 }
